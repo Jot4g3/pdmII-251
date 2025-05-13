@@ -1,7 +1,7 @@
 # 📒 Avaliação-02
 
-Implementar as funcionalidades relacionadas na função main () no arquivo fonte do fonte do [repositório](https://github.com/ricdtaveira/mobdev-parte-01/blob/master/14-poo/14-agregacao.dart)
-Evidenciar o código e o print da saída no GitHub e o link da atividade no Google Classroom.
+Implementar as funcionalidades relacionadas na função main () no arquivo fonte do fonte do [repositório](https://github.com/ricdtaveira/mobdev-parte-01/blob/master/14-poo/14-agregacao.dart)  
+Evidenciar o código Dart e o print da saída no GitHub, além do link da atividade no Google Classroom.
 
 # 🧩 Agregação e Composição em Dart
 
