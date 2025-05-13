@@ -19,23 +19,3 @@ Este projeto demonstra os conceitos de **Agregação** e **Composição** na pro
 4. Criação de uma lista de funcionários.
 5. Instanciação de um objeto `EquipeProjeto` com nome e lista de funcionários.
 6. Impressão da estrutura do projeto em formato JSON.
-
-## 🔧 Como Executar
-
-1. Certifique-se de ter o Dart SDK instalado. Caso não tenha, instale a partir do site oficial: [https://dart.dev/get-dart](https://dart.dev/get-dart)
-2. Clone este repositório:
-
-   ```bash
-   git clone https://github.com/ricdtaveira/mobdev-parte-01.git
-   ```
-3. Navegue até o diretório do projeto:
-
-   ```bash
-   cd mobdev-parte-01/14-poo
-   ```
-4. Execute o arquivo Dart:
-
-   ```bash
-   dart 14-agregacao.dart
-   ```
- 
