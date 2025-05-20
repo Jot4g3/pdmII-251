@@ -1,6 +1,6 @@
 # 📒 Avaliação-03
 
-Evidenciar a execução do exemplo de isolates contido no GitHub do Professor Ricardo Duarte Taveira, no [repositório da avaliação]([https://github.com/ricdtaveira/mobdev-parte-01/blob/master/14-poo/14-agregacao.dart](https://github.com/ricdtaveira/mobdev-parte-01/blob/master/16-programacao-assincrona/16-isolates-03.dart). 
+Evidenciar a execução do exemplo de isolates contido no GitHub do Professor Ricardo Duarte Taveira, no [repositório da avaliação]([https://github.com/ricdtaveira/mobdev-parte-01/blob/master/14-poo/14-agregacao.dart](https://github.com/ricdtaveira/mobdev-parte-01/blob/master/16-programacao-assincrona/16-isolates-03.dart)). 
 Evidenciar o código Dart e o print da saída no GitHub, além do link da atividade no Google Classroom.
 
 # 🧊 Isolates
