@@ -5,7 +5,7 @@ Evidenciar o código Dart e o print da saída no GitHub, além do link da ativid
 
 # 🧊 Isolates
 
-Este projeto demonstra os conceitos de **Isolates** e **Operações Assíncronas** na programação assíncrona a linguagem Dart. A atividade faz parte do módulo de Programação Orientada a Objetos (POO) do curso de Desenvolvimento Mobile.
+Este projeto demonstra os conceitos de **Isolates** e **Operações Assíncronas** na programação assíncrona a linguagem Dart. A atividade faz parte do módulo de Programação Assíncrona do curso de Desenvolvimento Mobile.
 
 ## 🧪 Passo a passo
 
