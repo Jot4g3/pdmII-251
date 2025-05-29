@@ -1,0 +1,64 @@
+**Atividade: Gerenciamento de Tarefas Pessoais**
+
+**Objetivo:** Desenvolver um pequeno aplicativo em Dart para gerenciar tarefas pessoais, utilizando conceitos de Definição de Classes, Criação e Popular Objetos, Transformação de Objetos em JSON e simulação de envio por e-mail.
+
+**Enunciado:**
+
+Você foi contratado para desenvolver um sistema simplificado de gerenciamento de tarefas pessoais. O sistema deve permitir ao usuário criar tarefas, definir seus detalhes, e, ao final, gerar um resumo das tarefas para ser "enviado" por e-mail.
+
+**Requisitos:**
+
+1.  **Definição da Classe `Tarefa`:**
+    * Crie uma classe chamada `Tarefa` que represente uma tarefa individual.
+    * A classe `Tarefa` deve ter os seguintes atributos:
+        * `titulo` (String): O título da tarefa (ex: "Comprar pão", "Estudar Dart").
+        * `descricao` (String): Uma descrição mais detalhada da tarefa.
+        * `dataVencimento` (DateTime): A data em que a tarefa deve ser concluída.
+        * `prioridade` (int): Um número inteiro representando a prioridade (1 = Alta, 2 = Média, 3 = Baixa).
+        * `concluida` (bool): Um valor booleano indicando se a tarefa foi concluída ou não (inicialmente `false`).
+    * A classe `Tarefa` deve ter um construtor que permita inicializar todos os atributos obrigatórios.
+
+2.  **Criação e Popularização de Objetos `Tarefa`:**
+    * No método `main` do seu programa, crie pelo menos **três** objetos da classe `Tarefa` com dados fictícios.
+    * Exemplos de tarefas:
+        * "Pagar contas", "Boletos de água e luz", data de hoje, prioridade 1.
+        * "Agendar médico", "Consulta de rotina", data daqui a uma semana, prioridade 2.
+        * "Ler livro", "Capítulo 5 de 'Clean Code'", data daqui a dois dias, prioridade 3.
+    * Atualize o atributo `concluida` de pelo menos uma das tarefas para `true`.
+
+3.  **Transformação de Objetos em JSON:**
+    * Na classe `Tarefa`, adicione um método chamado `toJson()` que retorne um `Map<String, dynamic>` representando a tarefa em formato JSON.
+    * Este método deve mapear cada atributo da classe para uma chave correspondente no mapa (ex: `{"titulo": "Comprar pão", "descricao": "...", ...}`).
+    * Utilize o pacote `dart:convert` para converter o `Map` resultante em uma String JSON usando `jsonEncode()`.
+    * No método `main`, itere sobre a lista de tarefas criadas e converta cada uma delas em uma String JSON. Imprima cada String JSON no console para verificar a conversão.
+
+4.  **Simulação de Envio de E-mail:**
+    * Crie uma função separada chamada `enviarEmailComTarefas(List<Tarefa> tarefas, String destinatario)`.
+    * Dentro dessa função:
+        * Gere um "corpo de e-mail" em formato de texto simples. Este corpo deve incluir um cabeçalho (ex: "Resumo das Suas Tarefas:") e, para cada tarefa na lista, as seguintes informações:
+            * Título da tarefa
+            * Data de vencimento
+            * Prioridade
+            * Status (Concluída/Pendente)
+        * Simule o envio do e-mail imprimindo no console a seguinte mensagem:
+            ```
+            ------------------------------------------
+            Enviando e-mail para: [destinatario]
+            Assunto: Resumo de Tarefas Diárias
+            Conteúdo:
+            [Corpo do e-mail gerado]
+            ------------------------------------------
+            ```
+    * No método `main`, chame a função `enviarEmailComTarefas` passando a lista de tarefas e um endereço de e-mail fictício (ex: "seu.email@example.com").
+
+**Dicas:**
+
+* Para datas, use a classe `DateTime`. Você pode formatá-las para exibição.
+* Lembre-se de importar `dart:convert` para trabalhar com JSON.
+* Mantenha seu código organizado, utilizando funções para cada etapa lógica.
+
+**Entrega:**
+
+O código-fonte completo do seu programa Dart (.dart) deve ser entregue. Certifique-se de que o código seja executável e que a saída no console demonstre todos os requisitos cumpridos.
+
+---
