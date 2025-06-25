@@ -8,8 +8,6 @@ Esta atividade consiste na execução do Codelab oficial do Flutter disponível 
 
 Aprender os fundamentos do Flutter desenvolvendo uma aplicação simples com navegação entre telas e uso de widgets.
 
----
-
 ## 📦 Projeto Flutter
 
 O projeto completo com o código-fonte desenvolvido está disponível neste repositório. Ele segue a estrutura padrão do Flutter e inclui:
@@ -20,10 +18,8 @@ O projeto completo com o código-fonte desenvolvido está disponível neste repo
 - Widgets personalizados e reutilizáveis
 - Entendimento sobre Statefull e Stateless Widgets
 
----
 
 ## 📷 Executando
 
 🎥 [Clique aqui para ver o vídeo da aplicação rodando](https://github.com/user-attachments/assets/0d355b0c-b497-4503-80b8-d69fbbb9117d)
 
----
