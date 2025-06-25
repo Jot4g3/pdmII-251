@@ -1,16 +1,29 @@
-# avaliacao_06
+# 🧪 Atividade 06 – Codelab Flutter
 
-A new Flutter project.
+Esta atividade consiste na execução do Codelab oficial do Flutter disponível em:
 
-## Getting Started
+🔗 https://docs.flutter.dev/get-started/codelab
 
-This project is a starting point for a Flutter application.
+## 📱 Objetivo
 
-A few resources to get you started if this is your first Flutter project:
+Aprender os fundamentos do Flutter desenvolvendo uma aplicação simples com navegação entre telas e uso de widgets.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+---
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## 📦 Projeto Flutter
+
+O projeto completo com o código-fonte desenvolvido está disponível neste repositório. Ele segue a estrutura padrão do Flutter e inclui:
+
+- Uso de `MaterialApp`
+- Tela inicial com `ListView`
+- Navegação para a tela de detalhes
+- Widgets personalizados e reutilizáveis
+- Entendimento sobre Statefull e Stateless Widgets
+
+---
+
+## 📷 Executando
+
+🎥 [Clique aqui para ver o vídeo da aplicação rodando](https://github.com/user-attachments/assets/0d355b0c-b497-4503-80b8-d69fbbb9117d)
+
+---
