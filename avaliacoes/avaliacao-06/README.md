@@ -1,4 +1,4 @@
-# 🧪 Atividade 06 – Codelab Flutter
+# 🧪 Avaliação 6 – Codelab Flutter
 
 Esta atividade consiste na execução do Codelab oficial do Flutter disponível em:
 
