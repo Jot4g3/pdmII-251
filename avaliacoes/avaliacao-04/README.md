@@ -1,4 +1,4 @@
-# 📒 Avaliação-04
+# 📒 Avaliação 4
 
 Implementar as funcionalidades relacionadas na função `main()` no arquivo Dart, conforme proposto em aula, utilizando SQLite3 para persistência de dados.  
 Evidenciar o código Dart e os prints de saída no GitHub, além do link da atividade no Google Classroom.
