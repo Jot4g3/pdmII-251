@@ -1,4 +1,4 @@
- # Atividade 5: Envio de E-mail com Dart e API do Gmail
+ # Avaliação 5: Envio de E-mail com Dart e API do Gmail
 
 ---
 
