@@ -21,9 +21,9 @@ Este é um projeto Flutter desenvolvido para a Atividade 08 da disciplina de PDM
 * **UI Reativa:** Implementação de uma interface que reage a diferentes estados (loading, data, error) usando o widget `Consumer`.
 * **Segurança de Nulos (Null Safety):** Tratamento de dados que podem ser nulos para garantir a robustez da aplicação.
 
-## 📱 Execução  
+## 📱 Telas em Execução
 
-![Print - 01](https://github.com/user-attachments/assets/0192114a-cd7f-48ba-bc62-36c8556b71c8)  
+<img src="https://github.com/user-attachments/assets/0192114a-cd7f-48ba-bc62-36c8556b71c8" width="250">
 
-![Print - 02](https://github.com/user-attachments/assets/71922f59-cf7e-4cb1-a4e3-39e52961545e)
+<img src="https://github.com/user-attachments/assets/71922f59-cf7e-4cb1-a4e3-39e52961545e" width="250">
 
