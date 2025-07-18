@@ -4,7 +4,7 @@ Este é um projeto Flutter desenvolvido para a Atividade 08 da disciplina de PDM
 
 ## ✨ Funcionalidades
 
-* **(Consumo da API de Rick and Morty)[https://rickandmortyapi.com/]** para buscar uma lista de personagens.
+* **[Consumo da API de Rick and Morty](https://rickandmortyapi.com)** para buscar uma lista de personagens.
 * **Exibição dos personagens** em uma lista vertical utilizando Cards personalizados.
 * **Gerenciamento de estado com Provider** para controlar os estados de carregamento (loading), sucesso e erro.
 * **Indicador de progresso** exibido enquanto os dados são carregados.
@@ -21,12 +21,7 @@ Este é um projeto Flutter desenvolvido para a Atividade 08 da disciplina de PDM
 * **UI Reativa:** Implementação de uma interface que reage a diferentes estados (loading, data, error) usando o widget `Consumer`.
 * **Segurança de Nulos (Null Safety):** Tratamento de dados que podem ser nulos para garantir a robustez da aplicação.
 
-## 📱 Telas
+## 📱 Execução  
 
-| Tela de Carregamento | Tela de Sucesso | Tela de Erro |
-| :------------------: | :-------------------: | :-------------------: |
-| ![Tela de Carregamento](link_para_seu_print_de_loading.png) | ![Tela de Sucesso](link_para_seu_print_da_lista.png) | ![Tela de Erro](link_para_seu_print_de_erro.png) |
-*Substitua os links acima pelos prints de tela do seu aplicativo.*
+| ![Print - 01](https://github.com/user-attachments/assets/0192114a-cd7f-48ba-bc62-36c8556b71c8) | ![Print - 02](https://github.com/user-attachments/assets/71922f59-cf7e-4cb1-a4e3-39e52961545e)
 
-![image info](https://github.com/user-attachments/assets/0192114a-cd7f-48ba-bc62-36c8556b71c8)  
-![image info](https://github.com/user-attachments/assets/71922f59-cf7e-4cb1-a4e3-39e52961545e)
