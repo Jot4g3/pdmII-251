@@ -1,19 +1,32 @@
-# avaliacao_08
+# Atividade 08: Flutter - Consumo de API e Lista Dinâmica
 
-A new Flutter project.
+Este é um projeto Flutter desenvolvido para a Atividade 08 da disciplina de PDMII, que demonstra o consumo de uma API REST (a API de Rick and Morty) e a exibição dos dados em uma lista dinâmica e interativa.
 
-## Getting Started
+## ✨ Funcionalidades
 
-This project is a starting point for a Flutter application.
+* **(Consumo da API de Rick and Morty)[https://rickandmortyapi.com/]** para buscar uma lista de personagens.
+* **Exibição dos personagens** em uma lista vertical utilizando Cards personalizados.
+* **Gerenciamento de estado com Provider** para controlar os estados de carregamento (loading), sucesso e erro.
+* **Indicador de progresso** exibido enquanto os dados são carregados.
+* **Tratamento de erros** de rede com mensagens amigáveis na interface.
+* **Funcionalidade de "Puxar para Atualizar" (Pull-to-Refresh)** para recarregar a lista de personagens.
 
-A few resources to get you started if this is your first Flutter project:
+## 💡 Conceitos Aplicados
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+* **Arquitetura de Pastas em Camadas:** O projeto foi estruturado separando as responsabilidades em camadas (Presentation, Data, Core, Services).
+* **Consumo de API REST:** Utilização do pacote `http` para realizar requisições GET.
+* **Parse de JSON:** Conversão da resposta JSON da API para objetos Dart (Models) com o método `fromJson`.
+* **State Management:** Gerenciamento de estado declarativo com o pacote `provider` e `ChangeNotifier`.
+* **Widgets Dinâmicos:** Uso de `ListView.builder` para construir a lista de forma eficiente.
+* **UI Reativa:** Implementação de uma interface que reage a diferentes estados (loading, data, error) usando o widget `Consumer`.
+* **Segurança de Nulos (Null Safety):** Tratamento de dados que podem ser nulos para garantir a robustez da aplicação.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## 📱 Telas
 
-![image info](https://github.com/user-attachments/assets/0192114a-cd7f-48ba-bc62-36c8556b71c8)
+| Tela de Carregamento | Tela de Sucesso | Tela de Erro |
+| :------------------: | :-------------------: | :-------------------: |
+| ![Tela de Carregamento](link_para_seu_print_de_loading.png) | ![Tela de Sucesso](link_para_seu_print_da_lista.png) | ![Tela de Erro](link_para_seu_print_de_erro.png) |
+*Substitua os links acima pelos prints de tela do seu aplicativo.*
+
+![image info](https://github.com/user-attachments/assets/0192114a-cd7f-48ba-bc62-36c8556b71c8)  
 ![image info](https://github.com/user-attachments/assets/71922f59-cf7e-4cb1-a4e3-39e52961545e)
