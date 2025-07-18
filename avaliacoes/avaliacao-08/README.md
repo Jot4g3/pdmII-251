@@ -23,5 +23,7 @@ Este é um projeto Flutter desenvolvido para a Atividade 08 da disciplina de PDM
 
 ## 📱 Execução  
 
-| ![Print - 01](https://github.com/user-attachments/assets/0192114a-cd7f-48ba-bc62-36c8556b71c8) | ![Print - 02](https://github.com/user-attachments/assets/71922f59-cf7e-4cb1-a4e3-39e52961545e)
+![Print - 01](https://github.com/user-attachments/assets/0192114a-cd7f-48ba-bc62-36c8556b71c8)  
+
+![Print - 02](https://github.com/user-attachments/assets/71922f59-cf7e-4cb1-a4e3-39e52961545e)
 
