@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:prova_pratica_02/data/providers/auth_provider.dart';
-import 'package:prova_pratica_02/presentation/screens/customer_screen.dart';
+import 'package:prova_pratica_02/presentation/screens/customer/customer_screen.dart';
+import 'package:prova_pratica_02/presentation/screens/products/product_screen.dart';
 import 'package:provider/provider.dart';
 
 class MainMenuScreen extends StatefulWidget {
@@ -74,7 +75,7 @@ class _MainMenuScreenState extends State<MainMenuScreen> {
               ),
               onPressed: () {
                 // Navega para a tela de cadastro/listagem de produtos
-                // Navigator.of(context).push(MaterialPageRoute(builder: (_) => ProductScreen()));
+                Navigator.of(context).push(MaterialPageRoute(builder: (_) => ProductScreen()));
               },
             ),
             const SizedBox(height: 16),

@@ -87,20 +87,20 @@ class _CustomerFormScreenState extends State<CustomerFormScreen> {
             ),
             TextFormField(
               controller: _firstNameController,
-              decoration: const InputDecoration(labelText: 'Nome'),
+              decoration: const InputDecoration(labelText: 'Nome', hintText: "Digite o nome do Cliente..."),
               validator: (value) =>
                   (value == null || value.isEmpty) ? 'Campo obrigatório' : null,
             ),
             TextFormField(
               controller: _lastNameController,
-              decoration: const InputDecoration(labelText: 'Sobrenome'),
+              decoration: const InputDecoration(labelText: 'Sobrenome', hintText: "Digite o sobrenome do Cliente..."),
               validator: (value) =>
                   (value == null || value.isEmpty) ? 'Campo obrigatório' : null,
             ),
             const SizedBox(height: 16),
             TextFormField(
               controller: _emailController,
-              decoration: const InputDecoration(labelText: 'E-mail'),
+              decoration: const InputDecoration(labelText: 'E-mail', hintText: "Digite o e-mail do Cliente..."),
               keyboardType: TextInputType.emailAddress,
               validator: (value) =>
                   (value == null || value.isEmpty) ? 'Campo obrigatório' : null,
@@ -108,7 +108,7 @@ class _CustomerFormScreenState extends State<CustomerFormScreen> {
             const SizedBox(height: 16),
             TextFormField(
               controller: _phoneController,
-              decoration: const InputDecoration(labelText: 'Telefone'),
+              decoration: const InputDecoration(labelText: 'Telefone', hintText: "Digite o telefone do Cliente..."),
               keyboardType: TextInputType.phone,
               validator: (value) =>
                   (value == null || value.isEmpty) ? 'Campo obrigatório' : null,

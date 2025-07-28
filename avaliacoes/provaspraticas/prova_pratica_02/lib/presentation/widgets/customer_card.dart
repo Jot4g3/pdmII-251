@@ -17,18 +17,29 @@ class CustomerCard extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           mainAxisAlignment: MainAxisAlignment.center, // Centraliza o conteúdo no Card
           children: [
-            Text(
-              customer.firstName + customer.lastName,
-              style: Theme.of(context).textTheme.headlineSmall,
-              maxLines: 2,
-              overflow: TextOverflow.ellipsis,
+            Row(
+              children: [
+                CircleAvatar(
+                  child: Text(
+                    customer.firstName.substring(0,1)
+                  ),
+                ),
+                Text(
+                  customer.firstName + " " + customer.lastName,
+                  style: Theme.of(context).textTheme.headlineSmall,
+                  maxLines: 2,
+                  overflow: TextOverflow.ellipsis,
+                ),
+              ],
             ),
             const Divider(height: 4),
             Text('ID: ${customer.id}', style: const TextStyle(color: Colors.grey)),
             const SizedBox(height: 2),
-            Text('Email: ${customer.email}'),
+            Text('Email: ', style: Theme.of(context).textTheme.labelLarge,),
+            Text(customer.email),
             const SizedBox(height: 2),
-            Text('Telefone: ${customer.phone}'),
+            Text('Telefone: ', style: Theme.of(context).textTheme.labelLarge,),
+            Text(customer.phone),
           ],
         ),
       ),

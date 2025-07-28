@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:prova_pratica_02/presentation/screens/register_screen.dart';
+import 'package:prova_pratica_02/presentation/screens/auth/register_screen.dart';
 import 'package:prova_pratica_02/presentation/screens/main_menu_screen.dart';
 import 'package:provider/provider.dart';
 import 'package:prova_pratica_02/data/providers/auth_provider.dart';
@@ -93,7 +93,7 @@ class _LoginScreenState extends State<LoginScreen> {
               
               TextFormField(
                 controller: _emailController,
-                decoration: const InputDecoration(labelText: 'E-mail', prefixIcon: Icon(Icons.email)),
+                decoration: const InputDecoration(labelText: 'E-mail', hintText: "Digite o seu e-mail...", prefixIcon: Icon(Icons.email)),
                 keyboardType: TextInputType.emailAddress,
                 validator: (value) {
                   if (value == null || value.isEmpty) {
@@ -113,6 +113,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 controller: _passwordController,
                 decoration: InputDecoration(
                   labelText: 'Senha',
+                  hintText: "Digite a sua senha...",
                   prefixIcon: const Icon(Icons.lock),
                   suffixIcon: IconButton(
                     icon: Icon(_passwordVisible ? Icons.visibility : Icons.visibility_off),

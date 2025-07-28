@@ -5,8 +5,8 @@ import 'package:prova_pratica_02/data/providers/order_provider.dart';
 import 'package:prova_pratica_02/data/providers/product_provider.dart';
 import 'package:prova_pratica_02/data/providers/supplier_provider.dart';
 import 'package:prova_pratica_02/presentation/screens/main_menu_screen.dart';
-import 'package:prova_pratica_02/presentation/screens/login_screen.dart';
-import 'package:prova_pratica_02/presentation/screens/register_screen.dart';
+import 'package:prova_pratica_02/presentation/screens/auth/login_screen.dart';
+import 'package:prova_pratica_02/presentation/screens/auth/register_screen.dart';
 import 'package:provider/provider.dart';
 
 void main() {

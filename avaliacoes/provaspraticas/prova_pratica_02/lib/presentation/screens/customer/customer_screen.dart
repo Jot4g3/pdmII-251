@@ -1,7 +1,7 @@
 // lib/presentation/customer/customer_screen.dart
 import 'package:flutter/material.dart';
-import 'package:prova_pratica_02/presentation/screens/customer_form_screen.dart';
-import 'package:prova_pratica_02/presentation/screens/customer_list_screen.dart';
+import 'package:prova_pratica_02/presentation/screens/customer/customer_form_screen.dart';
+import 'package:prova_pratica_02/presentation/screens/customer/customer_list_screen.dart';
 
 class CustomerScreen extends StatefulWidget {
   const CustomerScreen({super.key});
@@ -35,7 +35,7 @@ class _CustomerScreenState extends State<CustomerScreen> with SingleTickerProvid
         // A TabBar fica na parte de baixo da AppBar
         bottom: TabBar(
           controller: _tabController,
-          indicatorColor: Colors.amber, // Cor da linha selecionada
+          indicatorColor: Colors.deepPurple, // Cor da linha selecionada
           indicatorWeight: 4.0,
           tabs: const [
             Tab(
