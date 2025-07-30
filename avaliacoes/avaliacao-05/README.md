@@ -18,7 +18,7 @@ Antes de começar, certifique-se de ter:
 
 ## 📦 Dependências
 
-Para esta atividade, você precisará adicionar a seguinte dependência ao seu arquivo `pubspec.yaml`:
+Para esta atividade, eu precisei adicionar a seguinte dependência ao meu arquivo `pubspec.yaml`:
 
 ```yaml
 dependencies:
