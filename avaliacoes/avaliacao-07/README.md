@@ -1,4 +1,4 @@
-# Avaliação - 07
+# Avaliação 7 - NotebookLM
 
 ## 👣 Criar um NotebookLM sobre o tema [NETWORKING](https://docs.flutter.dev/data-and-backend/networking).
 - Usar como fonte o link acima, videos no youtube relacionados ao tema, e PDF. 
