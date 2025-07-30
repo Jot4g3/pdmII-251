@@ -1,16 +1,18 @@
 import 'package:flutter/material.dart';
+import 'package:prova_pratica_02/presentation/screens/orders/order_form_screen.dart';
+import 'package:prova_pratica_02/presentation/screens/orders/order_list_screen.dart';
 import 'package:prova_pratica_02/presentation/screens/products/product_form_screen.dart';
 import 'package:prova_pratica_02/presentation/screens/products/product_list_screen.dart';
 
-class ProductScreen extends StatefulWidget {
-  const ProductScreen({super.key});
+class OrderScreen extends StatefulWidget {
+  const OrderScreen({super.key});
 
   @override
-  State<ProductScreen> createState() => _ProductScreenState();
+  State<OrderScreen> createState() => _ProductScreenState();
 }
 
 // Usamos 'SingleTickerProviderStateMixin' para o TabController
-class _ProductScreenState extends State<ProductScreen> with SingleTickerProviderStateMixin {
+class _ProductScreenState extends State<OrderScreen> with SingleTickerProviderStateMixin {
   late TabController _tabController;
 
   @override
@@ -30,7 +32,7 @@ class _ProductScreenState extends State<ProductScreen> with SingleTickerProvider
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Gerenciar Produtos'),
+        title: const Text('Gerenciar Pedidos'),
         // A TabBar fica na parte de baixo da AppBar
         bottom: TabBar(
           controller: _tabController,
@@ -53,9 +55,9 @@ class _ProductScreenState extends State<ProductScreen> with SingleTickerProvider
         controller: _tabController,
         children: const [
           // Conteúdo da primeira aba
-          ProductFormScreen(),
+          OrderFormScreen(),
           // Conteúdo da segunda aba
-          ProductListScreen(),
+          OrderListScreen(),
         ],
       ),
     );

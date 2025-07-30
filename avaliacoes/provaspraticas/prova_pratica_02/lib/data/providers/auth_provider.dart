@@ -5,17 +5,24 @@ import '../models/user_model.dart';
 class AuthProvider extends ChangeNotifier {
   UserModel? _registeredUser;
   bool _isAuthenticated = false;
+  UserModel? _currentUser;
 
   UserModel? get registeredUser => _registeredUser;
+  UserModel? get currentUser => _currentUser;
   bool get isAuthenticated => _isAuthenticated;
 
-  void register(String email, String password) {
+  String? register(String email, String password) {
+    if (_registeredUser != null && _registeredUser!.email == email) {
+      return 'Este e-mail já foi cadastrado.';
+    }
+
     // Usando bcrypt para segurança maior.
     final String hashedPassword = BCrypt.hashpw(password, BCrypt.gensalt());
-
     _registeredUser = UserModel(email: email, hashedPassword: hashedPassword);
+
     print('Usuário cadastrado!');
     notifyListeners();
+    return null;
   }
 
   bool login(String email, String password) {
@@ -39,6 +46,7 @@ class AuthProvider extends ChangeNotifier {
 
   void logout() {
     _isAuthenticated = false;
+    _currentUser = null;
     notifyListeners();
   }
 }

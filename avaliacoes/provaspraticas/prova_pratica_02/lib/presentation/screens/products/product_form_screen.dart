@@ -1,5 +1,5 @@
-// lib/presentation/customer/customer_form_screen.dart
 import 'package:flutter/material.dart';
+import 'package:prova_pratica_02/core/validators/form_validators.dart';
 import 'package:prova_pratica_02/data/models/product_model.dart';
 import 'package:prova_pratica_02/data/providers/product_provider.dart';
 import 'package:provider/provider.dart';
@@ -87,8 +87,7 @@ class _ProductFormScreenState extends State<ProductFormScreen> {
             TextFormField(
               controller: _nameController,
               decoration: const InputDecoration(labelText: 'Nome', hintText: "Digite o nome do Produto..."),
-              validator: (value) =>
-                  (value == null || value.isEmpty) ? 'Campo obrigatório' : null,
+              validator: FormValidators.notNull,
             ),
             SizedBox(height: 20,),
             TextFormField(
@@ -96,8 +95,7 @@ class _ProductFormScreenState extends State<ProductFormScreen> {
               decoration: const InputDecoration(labelText: 'Descrição', hintText: "Digite a descrição do Produto...", border: OutlineInputBorder(), alignLabelWithHint: true, floatingLabelBehavior: FloatingLabelBehavior.never),
               keyboardType: TextInputType.multiline,
               maxLines: 5,
-              validator: (value) =>
-                  (value == null || value.isEmpty) ? 'Campo obrigatório' : null,
+              validator: FormValidators.notNull,
             ),
             const SizedBox(height: 16),
             TextFormField(
@@ -109,8 +107,7 @@ class _ProductFormScreenState extends State<ProductFormScreen> {
                 // E no máximo 2 casas decimais.
                 FilteringTextInputFormatter.allow(RegExp(r'^\d+[,.]?\d{0,2}')),
               ],
-              validator: (value) =>
-                  (value == null || value.isEmpty) ? 'Campo obrigatório' : null,
+              validator: FormValidators.notNull,
             ),
             const SizedBox(height: 32),
             ElevatedButton(

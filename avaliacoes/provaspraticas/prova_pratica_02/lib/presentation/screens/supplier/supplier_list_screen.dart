@@ -1,26 +1,28 @@
 import 'dart:math'; // Import para a função 'min'
 import 'package:flutter/material.dart';
 import 'package:prova_pratica_02/data/providers/product_provider.dart';
+import 'package:prova_pratica_02/data/providers/supplier_provider.dart';
 import 'package:prova_pratica_02/presentation/widgets/product_card.dart';
+import 'package:prova_pratica_02/presentation/widgets/supplier_card.dart';
 import 'package:provider/provider.dart';
 
-class ProductListScreen extends StatelessWidget {
-  const ProductListScreen({super.key});
+class SupplierListScreen extends StatelessWidget {
+  const SupplierListScreen({super.key});
 
   // Definimos quantos itens queremos por página
   final int itemsPerPage = 3;
 
   @override
   Widget build(BuildContext context) {
-    return Consumer<ProductProvider>(
-      builder: (context, productProvider, child) {
-        final products = productProvider.products;
+    return Consumer<SupplierProvider>(
+      builder: (context, supplierProvider, child) {
+        final suppliers = supplierProvider.suppliers;
 
         // Se a lista estiver vazia, mostra uma mensagem centralizada
-        if (products.isEmpty) {
+        if (suppliers.isEmpty) {
           return const Center(
             child: Text(
-              'Nenhum produto cadastrado.',
+              'Nenhum fornecedor cadastrado.',
               style: TextStyle(fontSize: 18, color: Colors.grey),
             ),
           );
@@ -29,7 +31,7 @@ class ProductListScreen extends StatelessWidget {
         // --- LÓGICA DE PAGINAÇÃO COMEÇA AQUI ---
 
         // 1. Calcula o número total de páginas necessárias
-        final int pageCount = (products.length / itemsPerPage).ceil();
+        final int pageCount = (suppliers.length / itemsPerPage).ceil();
 
         // Estrutura principal da tela
         return Padding(
@@ -38,7 +40,7 @@ class ProductListScreen extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               const Text(
-                "Lista de Produtos",
+                "Lista de Fornecedores",
                 style: TextStyle(
                     fontSize: 25,
                     fontWeight: FontWeight.w900,
@@ -56,16 +58,16 @@ class ProductListScreen extends StatelessWidget {
                   itemBuilder: (context, pageIndex) {
                     // 3. Calcula os índices de início e fim para a fatia da lista
                     final startIndex = pageIndex * itemsPerPage;
-                    final endIndex = min(startIndex + itemsPerPage, products.length);
+                    final endIndex = min(startIndex + itemsPerPage, suppliers.length);
                     
-                    // 4. Pega a sub-lista de produtos para a página atual
-                    final pageProducts = products.sublist(startIndex, endIndex);
+                    // 4. Pega a sub-lista de fornecedores para a página atual
+                    final pagesuppliers = suppliers.sublist(startIndex, endIndex);
 
-                    // 5. Retorna uma ListView para exibir os 3 (ou menos) produtos
+                    // 5. Retorna uma ListView para exibir os 3 (ou menos) fornecedores
                     return Column(
                       mainAxisAlignment: MainAxisAlignment.start,
                       children: [
-                        ...pageProducts.map((product) => ProductCard(product: product))
+                        ...pagesuppliers.map((supplier) => SupplierCard(supplier: supplier))
                       ],
                     );
                   },

@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:prova_pratica_02/data/providers/auth_provider.dart';
 import 'package:prova_pratica_02/presentation/screens/customer/customer_screen.dart';
+import 'package:prova_pratica_02/presentation/screens/orders/order_screen.dart';
 import 'package:prova_pratica_02/presentation/screens/products/product_screen.dart';
+import 'package:prova_pratica_02/presentation/screens/supplier/suplier_screen.dart';
 import 'package:provider/provider.dart';
 
 class MainMenuScreen extends StatefulWidget {
@@ -17,22 +19,19 @@ class _MainMenuScreenState extends State<MainMenuScreen> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.deepPurple,
+        foregroundColor: Colors.white,
         title: Text(
           "Gerenciador de Empresas",
           style: TextStyle(
-            color: Colors.white,
             fontSize: 20,
             fontWeight: FontWeight.w700,
           ),
         ),
         actions: [
           IconButton(
-            onPressed: () {
-              Provider.of<AuthProvider>(context, listen: false).logout();
-            },
+            onPressed: Provider.of<AuthProvider>(context, listen: false).logout,
             icon: const Icon(Icons.logout),
             tooltip: "Sair",
-            color: Colors.white,
           ),
         ],
       ),
@@ -40,7 +39,7 @@ class _MainMenuScreenState extends State<MainMenuScreen> {
         padding: EdgeInsets.all(24),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
-          mainAxisAlignment: MainAxisAlignment.center,
+          mainAxisAlignment: MainAxisAlignment.start,
           children: [
             Text(
               "O que deseja fazer hoje?",
@@ -90,7 +89,7 @@ class _MainMenuScreenState extends State<MainMenuScreen> {
               ),
               onPressed: () {
                 // Navega para a tela de cadastro/listagem de fornecedores
-                // Navigator.of(context).push(MaterialPageRoute(builder: (_) => SupplierScreen()));
+                Navigator.of(context).push(MaterialPageRoute(builder: (_) => SupplierScreen()));
               },
             ),
             const SizedBox(height: 16),
@@ -105,7 +104,7 @@ class _MainMenuScreenState extends State<MainMenuScreen> {
               ),
               onPressed: () {
                 // Navega para a tela de cadastro/listagem de pedidos
-                // Navigator.of(context).push(MaterialPageRoute(builder: (_) => OrderScreen()));
+                Navigator.of(context).push(MaterialPageRoute(builder: (_) => OrderScreen()));
               },
             ),
           ],

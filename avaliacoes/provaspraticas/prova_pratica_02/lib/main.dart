@@ -4,8 +4,8 @@ import 'package:prova_pratica_02/data/providers/customer_provider.dart';
 import 'package:prova_pratica_02/data/providers/order_provider.dart';
 import 'package:prova_pratica_02/data/providers/product_provider.dart';
 import 'package:prova_pratica_02/data/providers/supplier_provider.dart';
-import 'package:prova_pratica_02/presentation/screens/main_menu_screen.dart';
 import 'package:prova_pratica_02/presentation/screens/auth/login_screen.dart';
+import 'package:prova_pratica_02/presentation/screens/main_menu_screen.dart';
 import 'package:prova_pratica_02/presentation/screens/auth/register_screen.dart';
 import 'package:provider/provider.dart';
 
@@ -29,11 +29,19 @@ class MainApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'App de Gestão',
+      title: 'Gerenciador de Empresas',
+      theme: ThemeData(
+        primarySwatch: Colors.deepPurple,
+        appBarTheme: const AppBarTheme(
+          backgroundColor: Colors.deepPurple,
+          foregroundColor: Colors.white
+        ),
+      ),
+      debugShowCheckedModeBanner: false,
       // Lógica para mostrar a tela de login ou o menu principal
       home: Consumer<AuthProvider>(
         builder: (context, auth, child) {
-          return auth.isAuthenticated ? MainMenuScreen() : RegisterScreen();
+          return auth.isAuthenticated ? MainMenuScreen() : LoginScreen();
         },
       ),
     );

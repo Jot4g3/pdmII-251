@@ -2,40 +2,46 @@
 import 'package:flutter/material.dart';
 import 'package:prova_pratica_02/core/validators/form_validators.dart';
 import 'package:prova_pratica_02/data/models/customer_model.dart';
-import 'package:prova_pratica_02/data/providers/customer_provider.dart';
+import 'package:prova_pratica_02/data/models/supplier_model.dart';
+import 'package:prova_pratica_02/data/providers/supplier_provider.dart';
 import 'package:provider/provider.dart';
+import 'package:mask_text_input_formatter/mask_text_input_formatter.dart';
 
-class CustomerFormScreen extends StatefulWidget {
-  const CustomerFormScreen({super.key});
+
+class SupplierFormScreen extends StatefulWidget {
+  const SupplierFormScreen({super.key});
 
   @override
-  State<CustomerFormScreen> createState() => _CustomerFormScreenState();
+  State<SupplierFormScreen> createState() => _SupplierFormScreenState();
 }
 
-class _CustomerFormScreenState extends State<CustomerFormScreen> {
+class _SupplierFormScreenState extends State<SupplierFormScreen> {
   final _formKey = GlobalKey<FormState>();
-  final _firstNameController = TextEditingController();
-  final _lastNameController = TextEditingController();
-  final _emailController = TextEditingController();
-  final _phoneController = TextEditingController();
+  final _nameController = TextEditingController();
+  final _cnpjController = TextEditingController();
+  final _contactController = TextEditingController();
+
+  final _cnpjMaskFormatter = MaskTextInputFormatter(
+    mask: '##.###.###/####-##', 
+    filter: { "#": RegExp(r'[0-9]') }
+  );
 
   void _submitForm() {
     if (_formKey.currentState!.validate()) {
       FocusScope.of(context).unfocus(); // Remove o foco e esconde o teclado.
 
-      final newCustomer = CustomerModel(
-        firstName: _firstNameController.text,
-        lastName: _lastNameController.text,
-        email: _emailController.text,
-        phone: _phoneController.text,
+      final newSupplier = SupplierModel(
+        name: _nameController.text,
+        cnpj: _cnpjController.text,
+        contact: _contactController.text,
       );
 
       // Usa o provider para adicionar o cliente, sem ouvir mudanças (listen: false)
       try{
-        Provider.of<CustomerProvider>(
+        Provider.of<SupplierProvider>(
           context,
           listen: false,
-        ).addCustomer(newCustomer);
+        ).addSupplier(newSupplier);
       } catch(err){
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
@@ -47,10 +53,9 @@ class _CustomerFormScreenState extends State<CustomerFormScreen> {
 
       // Limpa os campos após o envio
       _formKey.currentState!.reset();
-      _firstNameController.clear();
-      _lastNameController.clear();
-      _emailController.clear();
-      _phoneController.clear();
+      _nameController.clear();
+      _cnpjController.clear();
+      _contactController.clear();
 
       // Mostra uma mensagem de sucesso
       ScaffoldMessenger.of(context).showSnackBar(
@@ -64,10 +69,9 @@ class _CustomerFormScreenState extends State<CustomerFormScreen> {
 
   @override
   void dispose() {
-    _firstNameController.dispose();
-    _lastNameController.dispose();
-    _emailController.dispose();
-    _phoneController.dispose();
+    _nameController.dispose();
+    _cnpjController.dispose();
+    _contactController.dispose();
     super.dispose();
   }
 
@@ -81,7 +85,7 @@ class _CustomerFormScreenState extends State<CustomerFormScreen> {
           // Usamos ListView para evitar overflow em telas pequenas
           children: [
             Text(
-              "Insira os dados do cliente",
+              "Insira os dados do Fornecedor",
               style: TextStyle(
                 fontSize: 25,
                 fontWeight: FontWeight.w900,
@@ -89,27 +93,22 @@ class _CustomerFormScreenState extends State<CustomerFormScreen> {
               ),
             ),
             TextFormField(
-              controller: _firstNameController,
-              decoration: const InputDecoration(labelText: 'Nome', hintText: "Digite o nome do Cliente..."),
+              controller: _nameController,
+              decoration: const InputDecoration(labelText: 'Nome', hintText: "Digite o nome do Fornecedor..."),
               validator: FormValidators.notNull,
             ),
             TextFormField(
-              controller: _lastNameController,
-              decoration: const InputDecoration(labelText: 'Sobrenome', hintText: "Digite o sobrenome do Cliente..."),
-              validator: FormValidators.notNull,
+              controller: _cnpjController,
+              inputFormatters: [_cnpjMaskFormatter],
+              decoration: const InputDecoration(labelText: 'CNPJ', hintText: '00.000.000/0000-00'),
+              keyboardType: TextInputType.text,
+              validator: FormValidators.validateCnpj,
             ),
             const SizedBox(height: 16),
             TextFormField(
-              controller: _emailController,
-              decoration: const InputDecoration(labelText: 'E-mail', hintText: "Digite o e-mail do Cliente..."),
-              keyboardType: TextInputType.emailAddress,
-              validator: FormValidators.validateEmail,
-            ),
-            const SizedBox(height: 16),
-            TextFormField(
-              controller: _phoneController,
-              decoration: const InputDecoration(labelText: 'Telefone', hintText: "Digite o telefone do Cliente..."),
-              keyboardType: TextInputType.phone,
+              controller: _contactController,
+              decoration: const InputDecoration(labelText: 'Contato', hintText: "Digite o contato do Cliente..."),
+              keyboardType: TextInputType.text,
               validator: FormValidators.validatePhone,
             ),
             const SizedBox(height: 32),

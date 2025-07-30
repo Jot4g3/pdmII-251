@@ -24,6 +24,7 @@ class CustomerCard extends StatelessWidget {
                     customer.firstName.substring(0,1)
                   ),
                 ),
+                SizedBox(width: 5,),
                 Text(
                   customer.firstName + " " + customer.lastName,
                   style: Theme.of(context).textTheme.headlineSmall,
@@ -32,7 +33,7 @@ class CustomerCard extends StatelessWidget {
                 ),
               ],
             ),
-            const Divider(height: 4),
+            const Divider(height: 10),
             Text('ID: ${customer.id}', style: const TextStyle(color: Colors.grey)),
             const SizedBox(height: 2),
             Text('Email: ', style: Theme.of(context).textTheme.labelLarge,),

@@ -41,16 +41,6 @@ class _LoginScreenState extends State<LoginScreen> {
             backgroundColor: Colors.red,
           ),
         );
-      } else {
-        ScaffoldMessenger.of(context).showSnackBar(
-          const SnackBar(
-            content: Text('Login realizado com sucesso!'),
-            backgroundColor: Colors.green,
-          ),
-        );
-        Navigator.of(context).push(
-          MaterialPageRoute(builder: (context) => const MainMenuScreen()),
-        );
       }
     } catch (e) {
       if (!mounted) return;
