@@ -19,7 +19,7 @@ O projeto completo com o código-fonte desenvolvido está disponível neste repo
 - Entendimento sobre Statefull e Stateless Widgets
 
 
-## 📷 Executando
+## 🧾 Evidências
 
 🎥 [Clique aqui para ver o vídeo da aplicação rodando](https://github.com/user-attachments/assets/0d355b0c-b497-4503-80b8-d69fbbb9117d)
 
