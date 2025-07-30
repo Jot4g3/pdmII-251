@@ -14,3 +14,6 @@ Este projeto demonstra os conceitos de **Isolates** e **Operações Assíncronas
 3. Fazer um print da execução;
 4.  Fazer o push para o github na aba avaliacao-03. 
 5.  Postar na entrega da tarefa o link da pasta do github.
+
+## 🧾 Evidências
+<img width="1523" height="944" alt="Image" src="https://github.com/user-attachments/assets/5aa02043-9112-43a2-8456-04eab34ed386" />
