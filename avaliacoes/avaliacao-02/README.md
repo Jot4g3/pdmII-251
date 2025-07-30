@@ -19,3 +19,6 @@ Este projeto demonstra os conceitos de **Agregação** e **Composição** na pro
 4. Criação de uma lista de funcionários.
 5. Instanciação de um objeto `EquipeProjeto` com nome e lista de funcionários.
 6. Impressão da estrutura do projeto em formato JSON.
+
+## 🧾 Evidências
+<img width="300" height="200" alt="Image" src="https://github.com/user-attachments/assets/55f09a9b-7cdb-46d9-af7b-f109356cf70e" />
