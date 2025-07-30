@@ -2,7 +2,7 @@
 
 ---
 
-💡Nesta atividade, eu desenvolveri um **cliente Dart** para enviar e-mails utilizando a **API do Gmail** e o pacote `mailer`. O objetivo é entender o processo de comunicação em rede e a integração com serviços externos em aplicações Dart.
+💡Nesta atividade, eu desenvolvi um **cliente Dart** para enviar e-mails utilizando a **API do Gmail** e o pacote `mailer`. O objetivo é entender o processo de comunicação em rede e a integração com serviços externos em aplicações Dart.
 
 ## 🚀 Sobre a Atividade
 
