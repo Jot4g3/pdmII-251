@@ -7,7 +7,7 @@ Projeto em Dart - Flutter que precisa cumprir os seguintes requisitos:
 3. Cada Cadastro terá as seguintes funcionalidades:   
 3.a. Voltar para a tela Menu;  
 3.b. Inserir os dados dos Clientes, Produtos, Fornecedores e Pedidos;  
-3.6. Listar os Dados dos Clienes, Produtos, Fornecedores e Pedidos;  
+3.c. Listar os Dados dos Clienes, Produtos, Fornecedores e Pedidos;  
 
 ### 👌 Observações
 - Os dados de Cadastro serão armazenados em Listas e Apresentados nua tela tipo PageView,
