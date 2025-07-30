@@ -30,3 +30,6 @@ dependencies:
 2. Abra o VSCode no projeto.
 3. Faça as alterações desejadas.
 4. Rode e seja feliz!
+
+## 🧾 Evidências
+<img width="1336" height="70" alt="Image" src="https://github.com/user-attachments/assets/97ee0ba0-dc39-4194-ab46-e0cb5990c345" />
