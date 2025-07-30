@@ -21,4 +21,4 @@ Este projeto demonstra os conceitos de **Agregação** e **Composição** na pro
 6. Impressão da estrutura do projeto em formato JSON.
 
 ## 🧾 Evidências
-<img width="300" height="200" alt="Image" src="https://github.com/user-attachments/assets/55f09a9b-7cdb-46d9-af7b-f109356cf70e" />
+<img width="900" height="700" alt="Image" src="https://github.com/user-attachments/assets/55f09a9b-7cdb-46d9-af7b-f109356cf70e" />
