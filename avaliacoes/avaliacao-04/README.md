@@ -33,3 +33,7 @@ Para executar este projeto localmente:
 ```bash
 dart pub add sqlite3
 dart alunos.dart
+```
+
+## 🧾 Evidências
+<img width="1524" height="946" alt="Image" src="https://github.com/user-attachments/assets/4d14abc1-55d1-44d8-9f0a-684dc609218a" />
