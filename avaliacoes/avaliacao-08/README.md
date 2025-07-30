@@ -1,4 +1,4 @@
-# Atividade 08: Flutter - Consumo de API e Lista Dinâmica
+# Atividade 08 - Flutter, Consumo de API e Lista Dinâmica
 
 Este é um projeto Flutter desenvolvido para a Atividade 08 da disciplina de PDMII, que demonstra o consumo de uma API REST (a API de Rick and Morty) e a exibição dos dados em uma lista dinâmica e interativa.
 
