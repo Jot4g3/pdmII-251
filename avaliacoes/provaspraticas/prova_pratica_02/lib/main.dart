@@ -28,22 +28,13 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final auth = context.watch<AuthProvider>();
+
     return MaterialApp(
       title: 'Gerenciador de Empresas',
-      theme: ThemeData(
-        primarySwatch: Colors.deepPurple,
-        appBarTheme: const AppBarTheme(
-          backgroundColor: Colors.deepPurple,
-          foregroundColor: Colors.white
-        ),
-      ),
       debugShowCheckedModeBanner: false,
       // Lógica para mostrar a tela de login ou o menu principal
-      home: Consumer<AuthProvider>(
-        builder: (context, auth, child) {
-          return auth.isAuthenticated ? MainMenuScreen() : LoginScreen();
-        },
-      ),
+      home: LoginScreen()
     );
   }
 }

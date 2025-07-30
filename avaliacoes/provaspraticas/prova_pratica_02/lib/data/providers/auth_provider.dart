@@ -19,8 +19,10 @@ class AuthProvider extends ChangeNotifier {
     // Usando bcrypt para segurança maior.
     final String hashedPassword = BCrypt.hashpw(password, BCrypt.gensalt());
     _registeredUser = UserModel(email: email, hashedPassword: hashedPassword);
+    _isAuthenticated = true;
 
     print('Usuário cadastrado!');
+
     notifyListeners();
     return null;
   }

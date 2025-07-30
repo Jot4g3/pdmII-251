@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:prova_pratica_02/data/providers/auth_provider.dart';
+import 'package:prova_pratica_02/presentation/screens/auth/login_screen.dart';
 import 'package:prova_pratica_02/presentation/screens/customer/customer_screen.dart';
 import 'package:prova_pratica_02/presentation/screens/orders/order_screen.dart';
 import 'package:prova_pratica_02/presentation/screens/products/product_screen.dart';
@@ -29,7 +30,12 @@ class _MainMenuScreenState extends State<MainMenuScreen> {
         ),
         actions: [
           IconButton(
-            onPressed: Provider.of<AuthProvider>(context, listen: false).logout,
+            onPressed: () {
+              Provider.of<AuthProvider>(context, listen: false).logout();
+              Navigator.of(context).pushReplacement(
+                MaterialPageRoute(builder: (context) => const LoginScreen()),
+              );
+            },
             icon: const Icon(Icons.logout),
             tooltip: "Sair",
           ),
