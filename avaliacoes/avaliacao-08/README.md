@@ -4,7 +4,7 @@ Este é um projeto Flutter desenvolvido para a Atividade 08 da disciplina de PDM
 
 ## ✨ Funcionalidades
 
-* **[Consumo da API de Rick and Morty](https://rickandmortyapi.com)** para buscar uma lista de personagens.
+* **Consumo da [API de Rick and Morty](https://rickandmortyapi.com)** para buscar uma lista de personagens.
 * **Exibição dos personagens** em uma lista vertical utilizando Cards personalizados.
 * **Gerenciamento de estado com Provider** para controlar os estados de carregamento (loading), sucesso e erro.
 * **Indicador de progresso** exibido enquanto os dados são carregados.
