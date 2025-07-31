@@ -13,3 +13,7 @@ Projeto em Dart - Flutter que precisa cumprir os seguintes requisitos:
 - Os dados de Cadastro serão armazenados em Listas e Apresentados nua tela tipo PageView,
 - Usar recursos similares ao Cart(Carrinho) onde a Gerencia de Estado garante a persistencia dos dados é assegurada e os dados registrados em uma tela permaneceram disponíveis apesar da mudança de tela,
 - Evidenciar no GitHub o código e os prints das telas em PDF.
+
+## 🧾 Evidências
+
+🎥 [Clique aqui para ver o vídeo da aplicação rodando](https://github.com/user-attachments/assets/e0d8bcdc-7e20-4000-b2c8-cd821c6019c4)
